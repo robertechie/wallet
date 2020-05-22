@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void dispose() {
     // TODO: implement dispose
-    flutterWebViewPlugin.dispose();
+    //flutterWebViewPlugin.dispose();
     super.dispose();
   }
 
@@ -102,9 +102,9 @@ class _MyHomePageState extends State<MyHomePage> {
 );
 //ens for network
         http.Response response =
-        await http.get("https://jsonplaceholder.typicode.com/posts/");
+        await http.get("https://google.com");
         print(response.statusCode);
-    if (response.statusCode == HttpStatus.ok && response.statusCode == 200 ) {
+    if (response.statusCode == HttpStatus.ok ) {
       //var result = jsonDecode(response.body);
       print("there is connection");
                setState(() {
